@@ -18,6 +18,8 @@
 
 # 📖 Rails React Starter <a name="about-project"></a>
 
+## [Hello React Front End]()
+
 It is a simple web application demonstrating use of React with Rails.
 
 ## 🛠 Built With <a name="built-with"></a>
@@ -64,7 +66,7 @@ In order to run this project you need: any web-browser.
 Clone this project to your desired folder.
 
 ```
-    git clone https://github.com/shafiuyushawu/hello_rails_react.git
+    git clone https://github.com/shafiuyushawu/hello_rails_back_end.git
 ```
 
 ### Install
@@ -73,8 +75,8 @@ Run from a terminal
 
 ```
     cd rails_react_starter
+
     bundle install
-    yarn add
 ```
 
 ### Usage
@@ -86,15 +88,12 @@ Run from a terminal
 
   rails db:create
 
-  rails assets:precompile
-
   rails db:migrate
 
-  ./bin/dev
+  rails server
 ```
 
 ## 👤 Author <a name="authors"></a>
-
 
 👤 **Shafiu Ibn Yushawu**
 
@@ -112,7 +111,7 @@ Run from a terminal
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](https://github.com/shafiuyushawu/hello_rails_react/issues).
+Feel free to check the [issues page](https://github.com/shafiuyushawu/hello_rails_back_end/issues).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

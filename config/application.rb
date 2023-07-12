@@ -9,13 +9,17 @@ Bundler.require(*Rails.groups)
 module HelloRailsBackEnd
   class Application < Rails::Application
     # Initialize configuration defaults for originally generated Rails version.
-    config.load_defaults 7.0
     config.middleware.insert_before 0, Rack::Cors do
       allow do
-        origins 'http://localhost:3000' # Replace with the appropriate origin URL
-        resource '*', headers: :any, methods: [:get, :post, :put, :patch, :delete, :options, :head]
+        origins 'http://localhost:3001' # Replace with the origin of your React application
+
+        resource '*',
+          headers: :any,
+          methods: [:get, :post, :put, :patch, :delete, :options, :head],
+          credentials: true
       end
     end
+
     # Configuration for the application, engines, and railties goes here.
     #
     # These settings can be overridden in specific environments using the files

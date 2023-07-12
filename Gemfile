@@ -3,7 +3,7 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby "3.2.2"
 
-gem 'rack-cors', require: 'rack/cors'
+gem 'rack-cors'
 
 gem "faker"
 
